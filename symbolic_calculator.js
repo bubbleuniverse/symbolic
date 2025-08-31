@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!operation || !latex) return;
         
         // Show loading state
-        resultField.setValue('\\text{Calculating...}');
+        resultField.setValue(`\\text{${i18n.t('status.calculating')}}`);
         
         // Send the request to the server
         fetch(`${CONFIG.API.BASE_URL}/calculate`, {
@@ -94,10 +94,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     })
                     .catch(proxyError => {
                         console.error('Proxy request error:', proxyError);
-                        resultField.setValue('\\text{Error: ' + error.message + '}');
+                        resultField.setValue(`\\text{${i18n.t('status.error')}: ${error.message}}`);
                     });
             } else {
-                resultField.setValue('\\text{Error: ' + error.message + '}');
+                resultField.setValue(`\\text{${i18n.t('status.error')}: ${error.message}}`);
             }
         });
     });
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(() => {
                 // Show feedback
                 const originalText = this.textContent;
-                this.textContent = 'Copied!';
+                this.textContent = i18n.t('status.copied');
                 setTimeout(() => {
                     this.textContent = originalText;
                 }, CONFIG.UI.COPY_FEEDBACK_DURATION);

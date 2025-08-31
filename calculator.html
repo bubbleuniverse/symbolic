@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Symbolic Calculator</title>
+    <title data-i18n="title.calculator">Symbolic Calculator</title>
     <link rel="icon" type="image/svg+xml" href="resources/speech-bubble.svg">
     <link rel="stylesheet" href="styles.css">
     <!-- MathLive CSS -->
     <link rel="stylesheet" href="https://unpkg.com/mathlive/mathlive-static.css">
     <!-- Configuration -->
     <script src="config.js"></script>
+    <!-- Internationalization -->
+    <script src="i18n.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="nav-links">
-            <a href="index.html">Editor</a>
-            <a class="active">Calculator</a>
+            <a href="index.html" data-i18n="nav.editor">Editor</a>
+            <a class="active" data-i18n="nav.calculator">Calculator</a>
+            <button id="language-toggle" class="language-toggle" data-i18n="language.switch">Switch to Chinese</button>
         </div>
         
         <div class="calculator-container">
@@ -26,17 +29,17 @@
                 
                 <div class="action-controls">
                     <select id="action-select">
-                        <option value="solve">Solve</option>
-                        <option value="integrate">Integrate</option>
-                        <option value="diff">Differentiate</option>
-                        <option value="simplify">Simplify</option>
-                        <option value="expand">Expand</option>
-                        <option value="factor">Factor</option>
-                        <option value="collect">Collect</option>
-                        <option value="limit">Limit</option>
-                        <option value="series">Series</option>
+                        <option value="solve" data-i18n="calculator.actions.solve">Solve</option>
+                        <option value="integrate" data-i18n="calculator.actions.integrate">Integrate</option>
+                        <option value="diff" data-i18n="calculator.actions.diff">Differentiate</option>
+                        <option value="simplify" data-i18n="calculator.actions.simplify">Simplify</option>
+                        <option value="expand" data-i18n="calculator.actions.expand">Expand</option>
+                        <option value="factor" data-i18n="calculator.actions.factor">Factor</option>
+                        <option value="collect" data-i18n="calculator.actions.collect">Collect</option>
+                        <option value="limit" data-i18n="calculator.actions.limit">Limit</option>
+                        <option value="series" data-i18n="calculator.actions.series">Series</option>
                     </select>
-                    <button id="calculate-btn" class="btn">Calculate</button>
+                    <button id="calculate-btn" class="btn" data-i18n="calculator.button.calculate">Calculate</button>
                 </div>
             </div>
             
@@ -45,13 +48,13 @@
                     <math-field id="result-field" readonly></math-field>
                 </div>
                 <div class="result-actions">
-                    <button id="copy-result" class="btn">Copy LaTeX</button>
+                    <button id="copy-result" class="btn" data-i18n="calculator.button.copy_latex">Copy LaTeX</button>
                 </div>
             </div>
         </div>
 
         <div class="examples-section">
-            <h2>Example Expressions</h2>
+            <h2 data-i18n="calculator.examples.title">Example Expressions</h2>
             <div class="example-buttons">
                 <button class="example-btn" data-example="ax+b+cx^{-1}">
                     <math-field readonly>ax+b+cx^{-1}</math-field>

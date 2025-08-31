@@ -175,6 +175,8 @@ kbd {
 
 /* Navigation links */
 .nav-links {
+    display: flex;
+    align-items: center;
     margin-bottom: 0px;
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
@@ -196,6 +198,32 @@ kbd {
 .nav-links a.active {
     background-color: #3498db;
     color: white;
+}
+
+/* Language Toggle Button */
+.language-toggle {
+    margin-left: auto;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.language-toggle:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.language-toggle:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Calculator container */
