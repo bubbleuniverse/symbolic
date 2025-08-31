@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbolic Calculator</title>
+    <link rel="icon" type="image/svg+xml" href="resources/speech-bubble.svg">
+    <link rel="stylesheet" href="styles.css">
+    <!-- MathLive CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/mathlive/mathlive-static.css">
+    <!-- Configuration -->
+    <script src="config.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-links">
+            <a href="index.html">Editor</a>
+            <a class="active">Calculator</a>
+        </div>
+        
+        <div class="calculator-container">
+            <div class="editor-section">
+                <div class="mathlive-editor">
+                    <math-field id="input-field">x</math-field>
+                </div>
+                
+                <div class="action-controls">
+                    <select id="action-select">
+                        <option value="solve">Solve</option>
+                        <option value="integrate">Integrate</option>
+                        <option value="diff">Differentiate</option>
+                        <option value="simplify">Simplify</option>
+                        <option value="expand">Expand</option>
+                        <option value="factor">Factor</option>
+                        <option value="collect">Collect</option>
+                        <option value="limit">Limit</option>
+                        <option value="series">Series</option>
+                    </select>
+                    <button id="calculate-btn" class="btn">Calculate</button>
+                </div>
+            </div>
+            
+            <div class="result-section">
+                <div class="result-display">
+                    <math-field id="result-field" readonly></math-field>
+                </div>
+                <div class="result-actions">
+                    <button id="copy-result" class="btn">Copy LaTeX</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="examples-section">
+            <h2>Example Expressions</h2>
+            <div class="example-buttons">
+                <button class="example-btn" data-example="ax+b+cx^{-1}">
+                    <math-field readonly>ax+b+cx^{-1}</math-field>
+                </button>
+                <button class="example-btn" data-example="\frac{1}{\sqrt{1+x^2}}">
+                    <math-field readonly>\frac{1}{\sqrt{1+x^2}}</math-field>
+                </button>
+                <button class="example-btn" data-example="\exp\left(-x^2\right)">
+                    <math-field readonly>\exp\left(-x^2\right)</math-field>
+                </button>
+                <button class="example-btn" data-example="\ln\left(1+x\right)">
+                    <math-field readonly>\ln\left(1+x\right)</math-field>
+                </button>
+                <button class="example-btn" data-example="\sin(x)/x">
+                    <math-field readonly>\sin(x)/x</math-field>
+                </button>
+                <button class="example-btn" data-example="\arcsin\left(2x\right)">
+                    <math-field readonly>\arcsin\left(2x\right)</math-field>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MathLive JS -->
+    <script src="https://unpkg.com/mathlive"></script>
+    <script src="cors-proxy.js"></script>
+    <script src="symbolic_calculator.js"></script>
+</body>
+</html> 
