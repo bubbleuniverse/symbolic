@@ -21,6 +21,7 @@ const translations = {
         
         // Calculator page
         'calculator.actions.solve': 'Solve',
+        'calculator.actions.dsolve': 'Dsolve',
         'calculator.actions.integrate': 'Integrate',
         'calculator.actions.diff': 'Differentiate',
         'calculator.actions.simplify': 'Simplify',
@@ -79,6 +80,7 @@ const translations = {
         
         // Calculator page
         'calculator.actions.solve': '求解',
+        'calculator.actions.dsolve': '求解微分方程',
         'calculator.actions.integrate': '积分',
         'calculator.actions.diff': '求导',
         'calculator.actions.simplify': '化简',
