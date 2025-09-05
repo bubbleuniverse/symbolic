@@ -58,8 +58,8 @@ Solve ordinary differential equations (ODEs):
 
 | Input                                                        | Output                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `\frac{d}{dx}f\left(x\right)-3f\left(x\right) = 0`          | `f{\left(x \right)} = C_{1} e^{3 x}`                         |
-| `\frac{d}{dx}\frac{d}{dx}f\left(x\right)+4f\left(x\right) = 0` | `f{\left(x \right)} = C_{1} \sin{\left(2 x \right)} + C_{2} \cos{\left(2 x \right)}` |
+| `\frac{d}{dx}f\left(x\right)-3f\left(x\right)`          | `f{\left(x \right)} = C_{1} e^{3 x}`                         |
+| `\frac{d}{dx}\frac{d}{dx}f\left(x\right)+4f\left(x\right)` | `f{\left(x \right)} = C_{1} \sin{\left(2 x \right)} + C_{2} \cos{\left(2 x \right)}` |
 
 ## Important Notes
 
