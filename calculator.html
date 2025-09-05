@@ -18,7 +18,48 @@
         <div class="nav-links">
             <a href="index.html" data-i18n="nav.editor">Editor</a>
             <a class="active" data-i18n="nav.calculator">Calculator</a>
+            <button id="help-toggle" class="help-toggle" data-i18n="help.toggle">Help</button>
             <button id="language-toggle" class="language-toggle" data-i18n="language.switch">Switch to Chinese</button>
+        </div>
+        
+        <!-- Help Section -->
+        <div id="help-section" class="help-section" style="display: none;">
+            <div class="help-content">
+                <h3 data-i18n="help.quick_start">Quick Start</h3>
+                <ol>
+                    <li data-i18n="help.step1">Enter a mathematical expression in the input field above</li>
+                    <li data-i18n="help.step2">Select an operation (integrate, differentiate, etc.) from the dropdown</li>
+                    <li data-i18n="help.step3">Click "Calculate" to see the result</li>
+                </ol>
+                
+                <h3 data-i18n="help.examples">Examples</h3>
+                <div class="help-examples">
+                    <div class="help-example">
+                        <strong data-i18n="help.integration">Integration:</strong>
+                        <span data-i18n="help.integration_example">x^2 → x³/3</span>
+                    </div>
+                    <div class="help-example">
+                        <strong data-i18n="help.differentiation">Differentiation:</strong>
+                        <span data-i18n="help.differentiation_example">x³ → 3x²</span>
+                    </div>
+                    <div class="help-example">
+                        <strong data-i18n="help.series">Series:</strong>
+                        <span data-i18n="help.series_example">sin(x) → x - x³/6 + x⁵/120 + ...</span>
+                    </div>
+                </div>
+                
+                <h3 data-i18n="help.important_notes">Important Notes</h3>
+                <ul>
+                    <li data-i18n="help.note_variable">Only use 'x' as a variable</li>
+                    <li data-i18n="help.note_constants">a, b, c are real constants</li>
+                    <li data-i18n="help.note_exp">Use exp(x) instead of e^x</li>
+                    <li data-i18n="help.note_loading">First calculation may take up to 15 seconds</li>
+                </ul>
+                
+                <div class="help-links">
+                    <a href="USER_MANUAL.md" target="_blank" data-i18n="help.full_manual">View Full Manual</a>
+                </div>
+            </div>
         </div>
         
         <div class="calculator-container">

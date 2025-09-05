@@ -38,6 +38,27 @@ const translations = {
         'status.copied': 'Copied!',
         'status.error': 'Error',
         
+        // Help section
+        'help.toggle': 'Help',
+        'help.hide': 'Hide Help',
+        'help.quick_start': 'Quick Start',
+        'help.step1': 'Enter a mathematical expression in the input field above',
+        'help.step2': 'Select an operation (integrate, differentiate, etc.) from the dropdown',
+        'help.step3': 'Click "Calculate" to see the result',
+        'help.examples': 'Examples',
+        'help.integration': 'Integration:',
+        'help.integration_example': 'x^2 → x³/3',
+        'help.differentiation': 'Differentiation:',
+        'help.differentiation_example': 'x³ → 3x²',
+        'help.series': 'Series:',
+        'help.series_example': 'sin(x) → x - x³/6 + x⁵/120 + ...',
+        'help.important_notes': 'Important Notes',
+        'help.note_variable': 'Only use \'x\' as a variable',
+        'help.note_constants': 'a, b, c are real constants',
+        'help.note_exp': 'Use exp(x) instead of e^x',
+        'help.note_loading': 'First calculation may take up to 15 seconds',
+        'help.full_manual': 'View Full Manual',
+        
         // Language toggle
         'language.current': 'English',
         'language.switch': 'Switch to Chinese'
@@ -74,6 +95,27 @@ const translations = {
         'status.calculating': '计算中...首次加载缓慢请耐心等待',
         'status.copied': '已复制！',
         'status.error': '错误',
+        
+        // Help section
+        'help.toggle': '帮助',
+        'help.hide': '隐藏帮助',
+        'help.quick_start': '快速开始',
+        'help.step1': '在上方输入框中输入数学表达式',
+        'help.step2': '从下拉菜单中选择操作（积分、求导等）',
+        'help.step3': '点击"计算"查看结果',
+        'help.examples': '示例',
+        'help.integration': '积分：',
+        'help.integration_example': 'x^2 → x³/3',
+        'help.differentiation': '求导：',
+        'help.differentiation_example': 'x³ → 3x²',
+        'help.series': '级数：',
+        'help.series_example': 'sin(x) → x - x³/6 + x⁵/120 + ...',
+        'help.important_notes': '重要提示',
+        'help.note_variable': '只能使用 \'x\' 作为变量',
+        'help.note_constants': 'a, b, c 是实数常数',
+        'help.note_exp': '使用 exp(x) 而不是 e^x',
+        'help.note_loading': '首次计算可能需要15秒',
+        'help.full_manual': '查看完整手册',
         
         // Language toggle
         'language.current': '中文',

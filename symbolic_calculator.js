@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const actionSelect = document.getElementById('action-select');
     const calculateBtn = document.getElementById('calculate-btn');
     const copyResultBtn = document.getElementById('copy-result');
+    const helpToggle = document.getElementById('help-toggle');
+    const helpSection = document.getElementById('help-section');
 
     // Configure MathLive fields
     inputField.setOptions({
@@ -121,6 +123,13 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     });
 
+    // Handle help toggle
+    helpToggle.addEventListener('click', function() {
+        const isVisible = helpSection.style.display !== 'none';
+        helpSection.style.display = isVisible ? 'none' : 'block';
+        this.textContent = isVisible ? i18n.t('help.toggle') : i18n.t('help.hide');
+    });
+
     // Add keyboard shortcuts
     document.addEventListener('keydown', function(e) {
         // Command+Enter or Ctrl+Enter to calculate
@@ -128,6 +137,12 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!calculateBtn.disabled) {
                 calculateBtn.click();
             }
+        }
+        
+        // F1 or H key to toggle help
+        if (e.key === 'F1' || (e.key.toLowerCase() === 'h' && (e.metaKey || e.ctrlKey))) {
+            e.preventDefault();
+            helpToggle.click();
         }
     });
 }); 

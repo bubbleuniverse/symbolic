@@ -200,9 +200,35 @@ kbd {
     color: white;
 }
 
+/* Help Toggle Button */
+.help-toggle {
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.help-toggle:hover {
+    background-color: #138496;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.help-toggle:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Language Toggle Button */
 .language-toggle {
-    margin-left: auto;
     padding: 8px 16px;
     background-color: #28a745;
     color: white;
@@ -408,4 +434,101 @@ math-field:focus {
 math-field[readonly] {
     background-color: #f8f9fa;
     cursor: default;
+}
+
+/* Help Section */
+.help-section {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.help-content h3 {
+    color: #3498db;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.help-content h3:first-child {
+    margin-top: 0;
+}
+
+.help-content ol, .help-content ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+    line-height: 1.6;
+}
+
+.help-content li {
+    margin: 0.3rem 0;
+}
+
+.help-examples {
+    margin: 0.5rem 0 1rem 0;
+}
+
+.help-example {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-left: 3px solid #3498db;
+    border-radius: 0 4px 4px 0;
+}
+
+.help-example strong {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.help-links {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.help-links a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.help-links a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Responsive help section */
+@media (max-width: 768px) {
+    .help-section {
+        margin: 0.5rem 0;
+        padding: 0.75rem;
+    }
+    
+    .help-content h3 {
+        font-size: 1rem;
+    }
+    
+    .help-example {
+        padding: 0.4rem;
+    }
 } 
