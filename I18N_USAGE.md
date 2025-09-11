@@ -121,7 +121,7 @@ To add new translatable text:
 
 ### Language Toggle
 - `language.current` - "English" / "中文"
-- `language.switch` - "Switch to Chinese" / "Switch to English"
+- `language.switch` - "中文" / "English"
 
 ## Testing
 
