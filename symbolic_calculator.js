@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Configure MathLive fields
     inputField.setOptions({
+        autoCommands: {
+            ...inputField.config.autoCommands,
+            d: null,  // This disables the automatic conversion of 'd'
+        },
         virtualKeyboardMode: 'manual',
         smartFence: true,
         smartSuperscript: true,
@@ -18,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         macros: {
             '\\diff': '\\frac{d}{d#1}',
             '\\int': '\\int_{#1}^{#2}',
+            '\\sqrt': '\\sqrt{#1}',
         }
     });
 

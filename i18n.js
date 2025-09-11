@@ -121,7 +121,7 @@ const translations = {
         
         // Language toggle
         'language.current': '中文',
-        'language.switch': 'Switch to English'
+        'language.switch': 'English'
     }
 };
 
