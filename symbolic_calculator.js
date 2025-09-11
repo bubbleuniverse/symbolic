@@ -8,29 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const helpToggle = document.getElementById('help-toggle');
     const helpSection = document.getElementById('help-section');
 
-    // Configure MathLive fields
-    inputField.setOptions({
-        autoCommands: {
-            ...inputField.config.autoCommands,
-            d: null,  // This disables the automatic conversion of 'd'
-        },
-        virtualKeyboardMode: 'manual',
-        smartFence: true,
-        smartSuperscript: true,
-        scriptDepth: 3,
-        removeExtraneousParentheses: true,
-        macros: {
-            '\\diff': '\\frac{d}{d#1}',
-            '\\int': '\\int_{#1}^{#2}',
-            '\\sqrt': '\\sqrt{#1}',
-        }
-    });
-
-    resultField.setOptions({
-        virtualKeyboardMode: 'manual',
-        readOnly: true
-    });
-
     // Enable/disable calculate button based on input and action selection
     function updateCalculateButton() {
         const hasContent = inputField.getValue().trim() !== '';

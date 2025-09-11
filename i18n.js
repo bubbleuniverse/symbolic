@@ -41,7 +41,7 @@ const translations = {
         
         // Help section
         'help.toggle': 'Help',
-        'help.hide': 'Hide Help',
+        'help.hide': 'Hide',
         'help.quick_start': 'Quick Start',
         'help.step1': 'Enter a mathematical expression in the input field above',
         'help.step2': 'Select an operation (integrate, differentiate, etc.) from the dropdown',
@@ -59,10 +59,12 @@ const translations = {
         'help.note_exp': 'Use exp(x) instead of e^x',
         'help.note_loading': 'First calculation may take up to 15 seconds',
         'help.full_manual': 'View Full Manual',
-        
+        'help.social': 'Contact Me',
+        'help.note_operator': 'd is reserved as the differential operator',
+        'help.note_function': 'Only f(x) is supported as a function',
         // Language toggle
         'language.current': 'English',
-        'language.switch': 'Switch to Chinese'
+        'language.switch': '中文'
     },
     zh: {
         // Navigation
@@ -100,7 +102,7 @@ const translations = {
         
         // Help section
         'help.toggle': '帮助',
-        'help.hide': '隐藏帮助',
+        'help.hide': '隐藏',
         'help.quick_start': '快速开始',
         'help.step1': '在上方输入框中输入数学表达式',
         'help.step2': '从下拉菜单中选择操作（积分、求导等）',
@@ -118,6 +120,9 @@ const translations = {
         'help.note_exp': '使用 exp(x) 而不是 e^x',
         'help.note_loading': '首次计算可能需要15秒',
         'help.full_manual': '查看完整手册',
+        'help.social': '联系我',
+        'help.note_operator': 'd 被视为微分符号',
+        'help.note_function': '仅支持 f(x) 作为函数',
         
         // Language toggle
         'language.current': '中文',

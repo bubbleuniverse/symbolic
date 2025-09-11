@@ -48,9 +48,9 @@ Generate Taylor series expansions around x=0:
 
 | Input                      | Output                                                       |
 | -------------------------- | ------------------------------------------------------------ |
-| `a^{x}`                    | `1 + x \log{\left(a \right)} + \frac{x^{2} \log{\left(a \right)}^{2}}{2} + \frac{x^{3} \log{\left(a \right)}^{3}}{6} + \frac{x^{4} \log{\left(a \right)}^{4}}{24} + \frac{x^{5} \log{\left(a \right)}^{5}}{120} + O\left(x^{6}\right)` |
-| `\sin x`                   | `x - \frac{x^{3}}{6} + \frac{x^{5}}{120} + O\left(x^{6}\right)` |
-| `\log\left(1+x\right)`     | `x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4} + \frac{x^{5}}{5} + O\left(x^{6}\right)` |
+| $a^{x}$                    | $1 + x \log{\left(a \right)} + \frac{x^{2} \log{\left(a \right)}^{2}}{2} + \frac{x^{3} \log{\left(a \right)}^{3}}{6} + \frac{x^{4} \log{\left(a \right)}^{4}}{24} + \frac{x^{5} \log{\left(a \right)}^{5}}{120} + O\left(x^{6}\right)$ |
+| $\sin x$                   | $x - \frac{x^{3}}{6} + \frac{x^{5}}{120} + O\left(x^{6}\right)$ |
+| $\log\left(1+x\right)$     | $x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4} + \frac{x^{5}}{5} + O\left(x^{6}\right)$ |
 
 ### Differential Equations
 
@@ -58,14 +58,16 @@ Solve ordinary differential equations (ODEs):
 
 | Input                                                        | Output                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `\frac{d}{dx}f\left(x\right)-3f\left(x\right)`          | `f{\left(x \right)} = C_{1} e^{3 x}`                         |
-| `\frac{d}{dx}\frac{d}{dx}f\left(x\right)+4f\left(x\right)` | `f{\left(x \right)} = C_{1} \sin{\left(2 x \right)} + C_{2} \cos{\left(2 x \right)}` |
+| $\frac{d}{dx}f\left(x\right)-3f\left(x\right)$          | $f{\left(x \right)} = C_{1} e^{3 x}$                         |
+| $\frac{d}{dx}\frac{d}{dx}f\left(x\right)+4f\left(x\right)$ | $f{\left(x \right)} = C_{1} \sin{\left(2 x \right)} + C_{2} \cos{\left(2 x \right)}$ |
 
 ## Important Notes
 
 ### Supported Features ✅
 
 - **Variables**: Only `x` is supported as a variable
+- **Functions**: Only `f(x)` is supported as a function
+- **Operator**: `d` is reserved as the differential operator
 - **Constants**: `a`, `b`, `c` are treated as real constants
 - **Exponential Function**: Use `\exp(x)` instead of `e^x`
 - **Performance**: First calculation may take up to 15 seconds due to lazy loading for cost optimization
