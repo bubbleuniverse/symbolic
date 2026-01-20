@@ -9,12 +9,20 @@ const translations = {
         // Navigation
         'nav.editor': 'Editor',
         'nav.calculator': 'Calculator',
+        'nav.notebook': 'Notebook',
         
         // Page titles
         'title.editor': 'Symbolic Math Tools',
         'title.calculator': 'Symbolic Calculator',
+        'title.notebook': 'Math Notebook',
+
+        // Notebook
+        'notebook.add_section': 'Add Section',
+        'notebook.download': 'Download Markdown',
+        'notebook.shortcut.add_pair': 'Shift+Enter: Add Text + Math Block',
         
         // Editor page
+
         'editor.shortcuts': 'Shortcuts',
         'editor.shortcut.new_row': 'Shift+Enter: add a new row',
         'editor.shortcut.copy_row': 'Shift+Command+Enter: copy the current row',
@@ -70,12 +78,20 @@ const translations = {
         // Navigation
         'nav.editor': '编辑器',
         'nav.calculator': '计算器',
+        'nav.notebook': '笔记本',
         
         // Page titles
         'title.editor': '符号数学工具',
         'title.calculator': '符号计算器',
+        'title.notebook': '数学笔记本',
+
+        // Notebook
+        'notebook.add_section': '添加段落',
+        'notebook.download': '下载 Markdown',
+        'notebook.shortcut.add_pair': 'Shift+Enter：添加文本+公式块',
         
         // Editor page
+
         'editor.shortcuts': '快捷键',
         'editor.shortcut.new_row': 'Shift+Enter：添加新行',
         'editor.shortcut.copy_row': 'Shift+Command+Enter：复制当前行',
