@@ -152,9 +152,106 @@ kbd {
     transform: translateY(-50%) scale(1.1);
 }
 
+/* Notebook Styles */
+.section-pair-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px; /* Spacing between pairs */
+    position: relative;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.section-pair-wrapper:hover {
+    border-color: #eee;
+    background-color: #fafafa;
+}
+
+.pair-part {
+    margin-bottom: 2px; /* Spacing within pair */
+}
+
+.pair-part:last-child {
+    margin-bottom: 0;
+}
+
+.section-number {
+    width: 30px;
+    font-weight: bold;
+    color: #95a5a6;
+    padding-top: 10px;
+    flex-shrink: 0;
+}
+
+.section-content {
+    flex-grow: 1;
+    margin-right: 40px; /* Space for delete button */
+    display: flex;
+    flex-direction: column; /* Stack Text and Math vertically */
+}
+
+.markdown-input {
+    width: 100%;
+    min-height: 40px; /* Slightly smaller min-height */
+    padding: 10px;
+    border: 1px solid #ddd; /* Keep borders for inputs to make them distinct */
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    resize: none;
+    overflow-y: hidden;
+    line-height: 1.5;
+    background-color: white;
+}
+
+.markdown-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.math-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    font-size: 1.2rem;
+}
+
+.math-input:focus-within {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.section-delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+    line-height: 1;
+}
+
+.section-pair-wrapper:hover .section-delete-btn {
+    opacity: 0.6;
+}
+
+.section-delete-btn:hover {
+    opacity: 1 !important;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .equation-container {
+
         flex-direction: column;
     }
     

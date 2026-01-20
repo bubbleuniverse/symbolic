@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title.notebook">Notebook</title>
+    <link rel="icon" type="image/svg+xml" href="resources/speech-bubble.svg">
+    <link rel="stylesheet" href="styles.css">
+    <!-- MathLive CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/mathlive/mathlive-static.css">
+    <script src="https://unpkg.com/mathlive"></script>
+    <!-- Configuration -->
+    <script src="config.js"></script>
+    <!-- Internationalization -->
+    <script src="i18n.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav.editor">Editor</a>
+            <a href="calculator.html" data-i18n="nav.calculator">Calculator</a>
+            <a class="active" data-i18n="nav.notebook">Notebook</a>
+            <button id="language-toggle" class="language-toggle" data-i18n="language.switch">中文</button>
+        </div>
+        
+        <div class="controls">
+            <button id="add-section-btn" data-i18n="notebook.add_section">Add Section</button>
+            <button id="download-btn" data-i18n="notebook.download">Download</button>
+            <div class="shortcut-hint" style="margin-top: 10px;">
+                <kbd>Shift</kbd> + <kbd>Enter</kbd> <span data-i18n="notebook.shortcut.add_pair">to add Text + Math Block</span>
+            </div>
+        </div>
+
+        <div id="notebook-container" class="notebook-container">
+            <!-- Sections will be rendered here -->
+        </div>
+    </div>
+    <script src="notebook.js"></script>
+</body>
+</html>
